@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "clod"
+version = "1.0.0"
+description = "Clod Code [⌐■_■]: an unofficial parody of Claude Code starring Claude's cool brother and a bad local model"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+dependencies = ["textual>=8.0", "rich>=14.0", "anthropic>=2.6", "llama-cpp-python>=0.3"]
+
+[project.scripts]
+clod = "clod.app:main"
+
+[tool.setuptools.packages.find]
+include = ["clod*"]
+
+[tool.setuptools.package-data]
+clod = ["*.tcss"]

@@ -1,0 +1,4 @@
+textual>=8.0
+rich>=14.0
+anthropic>=2.6
+llama-cpp-python>=0.3

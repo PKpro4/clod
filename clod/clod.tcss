@@ -1,0 +1,159 @@
+/* Clod Code: plain terminal look, terminal's own colors, one orange accent. */
+
+Screen {
+    background: ansi_default;
+    color: ansi_default;
+}
+
+#scroll {
+    height: 1fr;
+    background: ansi_default;
+    padding: 1 1 0 1;
+    scrollbar-size-vertical: 0;
+}
+
+#header {
+    height: auto;
+    margin: 0 0 1 0;
+}
+
+#mascot {
+    width: 11;
+    height: 3;
+    padding: 0 1 0 0;
+}
+
+#header-info {
+    width: 1fr;
+    height: 3;
+}
+
+#log {
+    height: auto;
+}
+
+/* ---------- transcript ---------- */
+.msg {
+    height: auto;
+    margin-top: 1;
+}
+
+.user {
+    height: auto;
+    background: #373737;
+    padding: 0 1 0 0;
+}
+
+.user .caret {
+    width: 2;
+}
+
+.user .body {
+    width: 1fr;
+    height: auto;
+}
+
+.clod .bullet {
+    width: 2;
+    color: ansi_default;
+}
+
+.clod.game .bullet {
+    color: #d77757;
+}
+
+.clod.error .bullet, .clod.error .body {
+    color: ansi_red;
+}
+
+.clod .body, .note .body, .tool .body {
+    width: 1fr;
+    height: auto;
+}
+
+.tool {
+    height: auto;
+}
+
+.tool .head {
+    height: auto;
+}
+
+.tool .result, .note {
+    height: auto;
+}
+
+.elbow {
+    width: 4;
+    color: ansi_bright_black;
+}
+
+.note .body {
+    color: ansi_bright_black;
+}
+
+.note {
+    margin-top: 0;
+}
+
+/* ---------- spinner + prompt ---------- */
+#spinner {
+    margin-top: 1;
+    height: 1;
+}
+
+#prompt-box {
+    height: 3;
+    margin-top: 1;
+    border-top: solid ansi_bright_black;
+    border-bottom: solid ansi_bright_black;
+    border-left: none;
+    border-right: none;
+}
+
+#prompt-box.game {
+    border-top: solid #d77757;
+    border-bottom: solid #d77757;
+}
+
+#caret {
+    width: 2;
+    color: ansi_default;
+}
+
+#prompt {
+    width: 1fr;
+    height: 1;
+    border: none;
+    padding: 0;
+    background: ansi_default;
+    color: ansi_default;
+}
+
+#prompt:focus {
+    border: none;
+    background: ansi_default;
+}
+
+#prompt > .input--placeholder {
+    color: ansi_bright_black;
+}
+
+#menu {
+    height: auto;
+    padding: 0 1;
+}
+
+#hints {
+    height: 1;
+    padding: 0 2;
+    margin-bottom: 1;
+}
+
+#hint-left {
+    width: 1fr;
+}
+
+#hint-right {
+    width: auto;
+}
