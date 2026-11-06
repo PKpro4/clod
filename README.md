@@ -5,6 +5,8 @@
 > app that pokes affectionate fun at Claude Code's look; the sunglasses-wearing critter is
 > a parody of Claude Code's mascot. No Anthropic source code is included.
 
+![Clod Code screenshot](docs/screenshot.png)
+
 > Your best friend in the terminal. Claude's cool brother. Wears sunglasses.
 > Runs a gloriously bad model on your CPU.
 
